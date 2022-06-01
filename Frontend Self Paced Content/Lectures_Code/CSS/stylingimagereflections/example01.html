@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Images</title>
+    <style>
+        /*img{
+            border-radius:25%;
+        }*/
+
+        .thumbnail{
+            border:1px solid red;
+            border-radius: 5px;
+            padding:5px;
+            width:200px;
+        }
+
+        .thumbnail:hover{
+            opacity: 0.5;
+        }
+
+        .blur{
+            filter:blur(4px);
+        }
+
+        .grayscale{
+            filter:grayscale(100%);
+        }
+
+        .grayscale:hover{
+            filter:grayscale(0%);
+        }
+
+        .invert{
+            filter:invert(100%);
+        }
+        .contrast{
+            filter:contrast(150%);
+        }
+        .sepia{
+            filter:sepia(100%);
+        }
+    </style>
+
+</head>
+<body>
+  <img class="thumbnail blur" src="https://source.unsplash.com/user/erondu/600x400">
+  <img class="thumbnail grayscale" src="https://source.unsplash.com/user/erondu/600x400">
+  <img class="thumbnail invert" src="https://source.unsplash.com/user/erondu/600x400">
+  <img class="thumbnail contrast" src="https://source.unsplash.com/user/erondu/600x400">
+  <img class="thumbnail sepia" src="https://source.unsplash.com/user/erondu/600x400">
+</body>
+</html>

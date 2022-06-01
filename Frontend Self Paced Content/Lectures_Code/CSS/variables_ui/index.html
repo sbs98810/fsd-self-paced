@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variabled UI</title>
+    <style>
+      :root {
+        --purple: #a45fbe;
+        --green: #53d397;
+        --white: #f7f9ff;
+        --orange: #ff7a5c;
+      }
+      body {
+        background-color: var(--purple);
+      }
+      h2 {
+        color: var(--purple);
+      }
+      .main {
+        color: var(--green);
+        padding: 15px;
+        background-color: var(--white);
+      }
+
+      button {
+        background-color: var(--orange);
+        color: var(--white);
+        border: 1px solid var(--purple);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Welcome to Board Infinity</h2>
+      <p>learn HTML , CSS , javascript</p>
+      <button type="button" class="btn">Click here</button>
+      <button type="button" class="btn">Cancel</button>
+    </div>
+  </body>
+</html>

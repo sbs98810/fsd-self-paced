@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Example</title>
+    <style>
+      .cube {
+        position: relative;
+        width: 100px;
+      }
+      .side {
+        height: 100px;
+        line-height: 100px;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+      }
+      .top {
+        background: #39375b;
+        color: white;
+        transform: rotate(-45deg) skew(15deg, 15deg);
+      }
+
+      .left {
+        background: #745c97;
+        color: white;
+        transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+      }
+      .right {
+        background: #d597ce;
+        color: white;
+        transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cube">
+      <figure class="side top">1</figure>
+      <figure class="side left">2</figure>
+      <figure class="side right">3</figure>
+    </div>
+  </body>
+</html>

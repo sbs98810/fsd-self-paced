@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Dropdown Example</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            background-color:#00cf95;
+        }
+
+        li{
+            float:left;
+        }
+
+        li a, .dropbtn{
+            display: inline-block;
+            color:#6d0ad3;
+            text-align:center;
+            padding:15px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color:#d1ffa2 ;
+            color:black;
+        }
+        li.tutorialsdropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position:absolute;
+            background-color: #d1ffa2;
+        }
+        .dropdown-content a{
+            color:#0098ef;
+            padding:12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover{
+            background-color: #00cf95;
+        }
+        .tutorialsdropdown:hover .dropdown-content{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="tutorialsdropdown">
+            <a href="#" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="#"><i class="fas fa-laptop-code"></i>  Website Projects</a>
+                <a href="#"><i class="fas fa-mobile-alt"></i>   Mobile Projects</a>
+                <a href="#"><i class="fas fa-trophy"></i>   Games Development</a>
+            </div>
+        </li>
+        
+        <li class="tutorialsdropdown">
+            <a href="#" class="dropbtn">Tutorials</a>
+            <div class="dropdown-content">
+                <a href="#">SASS</a>
+                <a href="#">Tailwind CSS</a>
+                <a href="#">Bootstrap</a>
+            </div>
+        </li>
+    </ul>
+
+    
+</body>
+</html>

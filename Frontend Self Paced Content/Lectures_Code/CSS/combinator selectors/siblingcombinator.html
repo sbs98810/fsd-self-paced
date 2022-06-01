@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Sibling Combinator</title>
+    <style>
+        .menu{
+            margin:5px;
+            padding:5px;
+            border:1px solid gainsboro;
+        }
+        a:hover{
+            color:green;
+           font-weight:bold;
+        }
+
+        a:hover ~ a{
+            font-size: 80%;
+            font-style:italic;
+            color:black;
+        }
+        </style>
+</head>
+<body>
+    <h3>CSS General Sibling Combinator</h3>
+
+    <a href="#">Common Links </a>
+    <div class="menu">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">Javascript</a>
+        <a href="#">Bootstrap</a>
+        <a href="#">JQuery</a>
+    </div>
+</body>
+</html>

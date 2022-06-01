@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS Property</title>
+    <style>
+       table,td,tr,th{
+           border:1px solid red;
+           border-collapse: collapse;
+           border-spacing:20px 20px;
+           caption-side: bottom;
+           color:blue;
+       }
+       th{
+           background-color: aquamarine;
+       }
+       table{
+           empty-cells: show;
+           table-layout:fixed;
+           width:200px;
+          
+       }
+       caption{
+           font-style: italic;
+           font-size: small;
+       }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Table 1.1 Points Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Willam</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Merlin</td>
+                <td>3402</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

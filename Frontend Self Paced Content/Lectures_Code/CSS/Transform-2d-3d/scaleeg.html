@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Example</title>
+    <style>
+      .main {
+        border-radius: 10px;
+        background: #aaaaaa;
+        border: 2px dotted #f36a7b;
+        float: left;
+        margin: 20px 20px;
+      }
+
+      .box {
+        background: #faf562;
+        height: 100px;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;
+        color: #b824a4;
+      }
+      /*.box-1 {
+        transform: scale(0.75);
+      }
+      .box-2 {
+        transform: scale(1.25);
+      }
+      .box-3 {
+        transform: scale(0.5);
+      }*/
+      .box-1 {
+        transform: scaleX(0.5);
+      }
+      .box-2 {
+        transform: scaleY(1.45);
+      }
+
+      .box-3 {
+        transform: scale(0.75, 1.55);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="secdiv">
+        <figure class="box box-1">Box-1</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-2">Box-2</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-3">Box-3</figure>
+      </div>
+    </div>
+  </body>
+</html>

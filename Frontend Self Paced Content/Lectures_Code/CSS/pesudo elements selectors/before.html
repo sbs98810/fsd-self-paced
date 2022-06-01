@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selectors</title>
+    <style>
+        blockquote::before{
+            content:open-quote;
+            color:deeppink;
+            font-size:3em;
+            position: relative;
+            top:20px;
+        }
+        blockquote::after{
+            content:close-quote;
+            color:deeppink;
+            font-size:3em;
+            position: relative;
+            top:20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+   <blockquote>
+       When you are totally at peace with yourself nothing can shake you - Unknown.
+   </blockquote>
+</body>
+
+</html>

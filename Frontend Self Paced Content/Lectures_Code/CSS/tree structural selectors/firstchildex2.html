@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      span:first-child{
+          color:grey;
+      }
+      li:first-child{
+          color:darkmagenta;
+      }
+
+      li:last-child{
+          color:darkred;
+      }
+
+      li:only-child{
+          color:green;
+      }
+
+      p:only-child{
+          border:1px solid blue;
+      }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1> H1 Heading :first-child</h1>
+        <p>
+            This is the 1st paragraph, but it's not the first child of its parent.
+        </p>
+        <p>
+            This is 2nd paragraph. 
+            <span>This is a span inside the paragraph.</span><br>
+            <span>This is a second span inside the paragraph.</span>
+        </p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+    </article>
+    <ul>
+        <li>Only List Item</li>
+      </ul>
+      <div>
+          <p>Only One Paragraph</p>
+      </div>
+</body>
+
+</html>

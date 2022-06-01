@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.maincontainer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3, 1fr);
+    grid-gap:0.5rem;
+    width:600px;
+}
+
+.maincontainer .imagediv{
+    position:relative;
+    opacity:0.5;
+}
+
+.maincontainer .imagediv:hover{
+    border:2px dotted red;
+    opacity:1.0;
+}
+
+h1{
+    color:deeppink;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Example</title>
+    <style>
+      .main {
+        background: #f1684e;
+        border-radius: 6px;
+        height: 300px;
+        position: relative;
+        min-width: 450px;
+      }
+      .ball {
+        background: #85c8dd;
+        border-radius: 50%;
+        height: 50px;
+        position: absolute;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      @keyframes slide {
+        0% {
+          top: 0;
+          background: white;
+        }
+        50% {
+          top: 238px;
+          background: red;
+        }
+        100% {
+          top: 0;
+          background: white;
+        }
+      }
+      .main:hover .ball {
+        /*animation: slide 2s linear;*/
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <figure class="ball">Ball</figure>
+    </div>
+  </body>
+</html>

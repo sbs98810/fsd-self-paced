@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Input Selectors</title>
+    <style>
+        input[type="number"]:read-only {
+            color: darkgoldenrod;
+            border: 2px solid red;
+        }
+        input[type="text"]:read-write{
+            color:darkolivegreen;
+        }
+        input[type="number"]:read-write{
+            border:1px solid green;
+        }
+
+        input:hover{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Read-only Example</h1>
+    <input type='text' disabled>
+    <br>
+    <br>
+    <input type='number' disabled>
+    <br>
+    <br>
+    <input type="number" readonly value="123456">
+    <br>
+    <br>
+    <h1>Read-Write Example</h1>
+    <input type="text">
+    <br><br>
+    <input type="number">
+    <br>
+    <br>
+</body>
+
+</html>

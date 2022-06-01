@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Input Selectors</title>
+  <style>
+   
+   input[type="checkbox"]:enabled+label{
+     color:coral;
+   }
+
+   input[type="checkbox"]:disabled+label{
+     cursor:not-allowed;
+     color:gray;
+   }
+
+   input[type="radio"]:disabled+label{
+     text-decoration: line-through;
+   }
+
+   input[type="radio"]:enabled+label{
+     color:green;
+   }
+
+   button:enabled{
+     color:green;
+     border:1px solid green;
+     background-color: honeydew;
+   }
+   button:enabled:hover{
+     background-color: white;
+     color:green;
+   }
+  </style>
+</head>
+
+<body>
+ <form>
+   <input type="checkbox" id="checkbox-1" disabled><label>2019-2020</label>
+   <input type="checkbox" id="checkbox-2" ><label>2020-2021</label>
+
+   <br>
+   <br>
+   <input type="radio" id="radio-1" ><label>August batch</label>
+   <input type="radio" id="radio-2" disabled><label>September batch</label>
+   <br>
+   <br>
+   <button type="submit" disabled>Submit</button>
+   <button type="submit" >Submit</button>
+ </form>
+
+</body>
+
+</html>

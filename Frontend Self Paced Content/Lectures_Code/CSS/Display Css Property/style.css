@@ -1,0 +1,23 @@
+header{
+    background:purple;
+    height:100px;
+}
+h1{
+    text-align:center;
+    color:white;
+    line-height:100px;
+}
+article{
+    padding:10px;
+    margin:10px;
+    background:lightpink;
+}
+
+section{
+    display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+}
+article{
+    flex:100px;
+}

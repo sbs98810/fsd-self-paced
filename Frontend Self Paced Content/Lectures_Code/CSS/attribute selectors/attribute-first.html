@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        a[target]{
+            background-color: goldenrod;
+        }
+        a[target=_blank]{
+            background-color: green;
+        }
+        a{
+            color:hotpink;
+        }
+
+        [title~=images]{
+            border:2px solid orangered;
+        }
+    </style>
+</head>
+
+<body>
+<h2>CSS[attribute="value"]Selector</h2>
+<a href="https://www.google.com">Google</a>
+<a href="https://www.boardinfinity.com" target="_blank">Board Infinity</a>
+
+<h2>CSS [attribute~="value"] Selector</h2>
+    <p>All images with the title attribute containing the word "image" get a orangered border.</p>
+    <img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&&fm=jpg&w=400&fit=max"
+        title="awesome image" width="150" height="113">
+    <img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&fit=crop&w=1080&q=80&fit=max"
+        title="image" width="224" height="162">
+    <img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&q=80"
+        title="images" width="200" height="280">
+
+</body>
+
+</html>

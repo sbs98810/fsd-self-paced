@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters Example #2</title>
+    <style>
+        body{
+            counter-reset: section;
+           
+        }
+
+        h1{
+            counter-reset: subsection;
+        }
+        h1::before{
+            counter-increment: section;
+            content:"Section " counter(section) " . ";
+            color:pink;
+        }
+        h1{
+            color:deeppink;
+        }
+        p::before{
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+            color:deepskyblue;
+        }
+        p{
+            color:blue;
+        }
+    </style>
+   
+</head>
+<body>
+   <h1>Web development</h1>
+   <p>HTML</p>
+   <p>CSS</p>
+   <p>Bootstrap</p>
+   <p>TailwindCSS</p>
+   <h1>Mobile App development</h1>
+   <p>SWIFT</p>
+   <p>Android</p>
+   <p>React Native</p>
+   <p>Angular</p>
+</body>
+</html>

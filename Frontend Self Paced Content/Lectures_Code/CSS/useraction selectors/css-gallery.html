@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS gallery example - MDN</title>
+<style type="text/css">
+#gallery-container {
+	position: relative;
+	width: 500px;
+	height: auto;
+	padding-top: 350px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 1px #aaaaaa solid;
+}
+
+img.gallery-fullsize {
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	display: none;
+}
+
+div.gallery-item {
+	display: inline-block;
+}
+
+img.gallery-preview:hover ~ img.gallery-fullsize {
+	display: block;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS gallery</h1>
+<div id="gallery-container">
+	<div class="gallery-item">
+		<img src="images/1s.jpg" class="gallery-preview" />
+		<img src="images/1.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<img src="images/2s.jpg" class="gallery-preview" />
+		<img src="images/2.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<img src="images/3s.jpg" class="gallery-preview" />
+		<img src="images/3.jpg" class="gallery-fullsize" />
+	</div>
+	<div class="gallery-item">
+		<img src="images/4s.jpg" class="gallery-preview" />
+		<img src="images/4.jpg" class="gallery-fullsize" />
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Example</title>
+    <style>
+      .main {
+        border-radius: 10px;
+        background: #78bbe6;
+        border: 2px dotted #1b435d;
+        float: left;
+        margin: 20px 20px;
+      }
+
+      .box {
+        background: #d5eeff;
+        height: 100px;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;
+        color: #b824a4;
+      }
+
+      .box-1 {
+        transform: skewX(15deg);
+      }
+      .box-2 {
+        transform: skewY(-25deg);
+      }
+      .box-3 {
+        transform: skew(5deg, -25deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="secdiv">
+        <figure class="box box-1">Box-1</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-2">Box-2</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-3">Box-3</figure>
+      </div>
+    </div>
+  </body>
+</html>

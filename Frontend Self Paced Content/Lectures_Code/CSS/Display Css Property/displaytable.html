@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Table</title>
+    <style>
+        .mytable{
+            display: table;
+        }
+        .row{
+            display: table-row;
+            margin:2px;
+            background-color: lavender;
+            
+        }
+        .celldata{
+            display:table-cell;
+            border: 1px solid deeppink;
+        }
+        .row .celldata{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Subjects</td>
+            <td>Marks</td>
+            <td>Comments</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>99</td>
+            <td>Good Work!</td>
+        </tr>
+        <tr>
+            <td>physics</td>
+            <td>99</td>
+            <td>Good Work!</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>99</td>
+            <td>Good Work!</td>
+        </tr>
+        <tr>
+            <td>Computers</td>
+            <td>100</td>
+            <td>Good Work!</td>
+        </tr>
+    </table>
+
+    <div class="mytable">
+        <div class="row">
+            <div class="celldata">Subjects</div>
+            <div class="celldata">Marks</div>
+            <div class="celldata">Comments</div>
+        </div>
+        <div class="row">
+            <div class="celldata">Maths</div>
+            <div class="celldata">99</div>
+            <div class="celldata">Good Work!</div>
+        </div>
+        <div class="row">
+            <div class="celldata">physics</div>
+            <div class="celldata">99</div>
+            <div class="celldata">Good Work!</div>
+        </div>
+        <div class="row">
+            <div class="celldata">Science</div>
+            <div class="celldata">100</div>
+            <div class="celldata">Good Work!</div>
+        </div>
+        <div class="row">
+            <div class="celldata">Computers</div>
+            <div class="celldata">100</div>
+            <div class="celldata">Good Work!</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Input Selectors</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        input[type="checkbox"]:indeterminate+label {
+            color: deepPink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <input type="checkbox" id="option"><label for="option" indeterminate> Electronics</label>
+            <ul>
+                <li><label><input type="checkbox" class="subOption"> Laptops</label></li>
+                <li><label><input type="checkbox" class="subOption"> TVs</label></li>
+                <li><label><input type="checkbox" class="subOption"> Microphones</label></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        var checkboxes = document.querySelectorAll('input.subOption'),
+            checkall = document.getElementById('option');
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].onclick = function () {
+                var checkedCount = document.querySelectorAll('input.subOption:checked').length;
+
+                checkall.checked = checkedCount > 0;
+                checkall.indeterminate = checkedCount > 0 && checkedCount < checkboxes.length;
+            }
+        }
+
+        checkall.onclick = function () {
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = this.checked;
+            }
+        }
+    </script>
+</body>
+
+</html>

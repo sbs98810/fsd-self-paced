@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms CSS Example</title>
+    <style>
+      *, *:before, *:after{
+          box-sizing: border-box;
+      }
+
+      div{
+          font-family: 'Open Sans Condensed' , arial, sans;
+          width:600px;
+          background: #d2eba7;
+          margin:50px auto;
+          padding: 10px;
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.22);
+      }
+
+      div >form{
+          width:500px;
+          margin:50px auto;
+      }
+
+     .input-design{
+         padding: 10px;
+         margin:30px 60px;
+         width:350px;
+     }
+     .border-bottom-input{
+         border:0;
+         border-bottom: 3px solid #019081;
+         box-shadow: 0px 0px 15px rgba(0,0,0,0.30);
+     }
+
+     .input-design:focus{
+         border-bottom: 2px solid deeppink;
+         outline:none;
+     }
+
+     form h1{
+         color:#019081;
+         margin:30px;
+     }
+
+
+     input[type="submit"]{
+         padding: 15px;
+         margin:30px 60px;
+         width:350px;
+     }
+
+     .border-submit{
+         outline: none;
+         border-radius: 10px;
+         background-color: #019081;
+         color:white;
+         font-size: large;
+         font-family: 'Times New Roman', Times, serif;
+     }
+    </style>
+</head>
+<body>
+<div>
+    <form>
+        <h1>Board Infinity Course Form</h1>
+        <input type="text" placeholder="Name" class="input-design border-bottom-input">
+        <input type="email" placeholder="Email Id" class="input-design border-bottom-input">
+        <input type="password" placeholder="Password" class="input-design border-bottom-input">
+        <input type="number" placeholder="Contact " class="input-design border-bottom-input">
+        <input type="submit"  value="Click Here to Enroll"class="border-submit">
+    </form>
+</div>
+</body>
+</html>

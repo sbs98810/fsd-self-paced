@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Combinator</title>
+    <style>
+        a {
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .menubar {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid gainsboro;
+        }
+
+        a:hover {
+            color:goldenrod;
+            font-weight: bold;
+        }
+        a:hover + a{
+            font-style:italic;
+            
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h3>CSS Adjacent Sibling combinator</h3>
+    <a href="#">Common Links</a>
+    <div class="menubar">
+        <a href="#">CSS</a>
+        <a href="#">Javascript</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+        <a href="#">jQuery</a>
+    </div>
+
+</body>
+
+</html>

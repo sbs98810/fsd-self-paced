@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Rotate</title>
+    <style>
+      .main,
+      .box {
+        border-radius: 5px;
+      }
+
+      .main {
+        background: #fbceb5;
+        border: 1px solid #ff5d6c;
+        float: left;
+        margin: 20px 20px;
+      }
+
+      .box {
+        background: #8cba51;
+        height: 100px;
+        line-height: 80px;
+        text-align: center;
+        width: 100px;
+      }
+
+      .box-1 {
+        transform: perspective(200px) rotateX(45deg);
+      }
+      .box-2 {
+        transform: perspective(200px) rotateY(45deg);
+      }
+      .box-3 {
+        transform: perspective(200px) rotateX(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <figure class="box box-1">Box-1</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-2">Box-2</figure>
+      </div>
+    </div>
+    <div class="main">
+      <div>
+        <figure class="box box-3">Box-3</figure>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>furniturezone</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand me-2 bg-dark" href="index.html"><img src="images/HomeLogo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fi-rr-angle-down"></i>
+      </button>
+      <div class="input-group  mb-4 ms-4" style="width: 60%!important;margin-top: 1rem;">
+        <input type="text" class="form-control" placeholder="Search Products" aria-label="Search Products"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+          <i class="fi-rr-search"></i></a></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav position-relative start-50 translate-middle-x">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <a class="navbar-brand ms-2" href="signup.html"><i class="fi-rr-user"></i><a id="userName"></a>
+    </nav>
+    <div id="banner-section">
+      <img src="images/banner-img.jpg" class="bannerImg" height="200px" alt="...">
+    </div>
+    <div id="category-section" class="container mt-4 d-flex justify-content-around">
+      <span><img src="images/living-room.png" width="80px" height="80px"></span>
+      <span><img src="images/bed.png" width="80px" height="80px"></span>
+      <span><img src="images/cutlery.png" width="80px" height="80px"></span>
+      <span><img src="images/desk.png" width="80px" height="80px"></span>
+      <span><img src="images/bath.png" width="80px" height="80px"></span>
+      <span><img src="images/cupboard.png" width="80px" height="80px"></span>
+    </div>
+    <div class="container mt-2 d-flex justify-content-around">
+      <span>Living Room</span>
+      <span>Bedroom</span>
+      <span>Kitchen</span>
+      <span>Workspace</span>
+      <span>Bathroom</span>
+      <span>Accessories</span>
+    </div>
+    <div id="offers-section" class="container offerSection d-flex mt-4">
+      <div class="floatLeft me-4">
+        <img src="images/offers.jpg" width="100%">
+      </div>
+      <div class="floatRight">
+        <img src="images/offerImg.jpg" width="72%">
+        <p class="offersInnerDiv text-center text-white fs-5">Find More details <i class="fi-rr-arrow-right"></i></p>
+      </div>
+    </div>
+    </div>
+
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto">
+        <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item py-5 active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">$7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch 01</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item py-5">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item py-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">$700</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div align="center" class="row">
+      <div class="col bg-dark pt-4 text-white">
+        <img src="images/HomeLogo.png"><br>
+        <a>Address: 17 Princess Road, London, Greater London NW1 8JR, UK</a><br>
+        <a>Phone: (800) 8001-8588, (0600) 874 548</a><br>
+        <a>Email: info@gmail.com</a>
+      </div>
+      <div align="center" class="col bg-dark text-white">
+        <div class="row">
+          <div class="col-sm-2 mt-4" style="margin-left: 176px;">
+            <a>About Us</a>
+            <a>Shop</a>
+            <a>Features</a>
+            <a>Contact</a>
+          </div>
+          <div class="col-sm-2 mt-4">
+            <a>Shipping</a>
+            <a>Help</a>
+            <a>Privacy Policy</a>
+            <a>FAQs</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 bg-dark text-white">
+        <a>Newsletter</a><br><br>
+        <a>Sign up for our Newsletter to get more events, promotions & news from us!</a>
+        <div class="input-group  mb-4 ms-4" style="width: 60%!important;margin-top: 1rem;">
+          <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+              class="fi-rr-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/general.js"></script>
+ <script src="scripts/dbconnect.js"></script>
+</body>
+
+</html>

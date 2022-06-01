@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selectors</title>
+    <style>
+        p::first-letter{
+            color:blue;
+            font-size: 2.5em;
+        }
+        p:first-of-type::first-letter{
+            font-weight:bold;
+            color:deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <article>
+            <h2>New Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aut, placeat, eaque quia obcaecati ratione aliquid impedit nulla consequatur itaque perferendis similique ducimus nostrum, eveniet temporibus quisquam quo corporis!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aut, placeat, eaque quia obcaecati ratione aliquid impedit nulla consequatur itaque perferendis similique ducimus nostrum, eveniet temporibus quisquam quo corporis!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aut, placeat, eaque quia obcaecati ratione aliquid impedit nulla consequatur itaque perferendis similique ducimus nostrum, eveniet temporibus quisquam quo corporis!</p>
+        </article>
+    </div>
+</body>
+
+</html>

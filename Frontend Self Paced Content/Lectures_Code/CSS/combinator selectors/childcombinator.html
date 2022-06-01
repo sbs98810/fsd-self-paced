@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator</title>
+    <style>
+        div.myDiv{
+            margin:5px;
+            padding: 5px;
+            border:1px solid green;
+        }
+
+        div > .title{
+            color:blue;
+        }
+
+        div > .content{
+            color:crimson;
+        }
+        div > p > a{
+            color:darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+   <h3>CSS child combinator</h3>
+   <div class="myDiv">
+       <p class="title">CSS</p>
+       <p class="content">CSS stands for Cascading style sheet</p>
+   </div>
+   <div class="myDiv">
+       <p class="title">Javascript</p>
+       <p class='content'>
+           <a href="#">More details</a><br>
+           Javascript is a scripting or programming language that mainpulates the HTML elements</p>
+   </div>
+</body>
+
+</html>

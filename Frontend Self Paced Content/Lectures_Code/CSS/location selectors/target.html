@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learm location selectors </title>
+    <style>
+       p:target{
+            background-color: gold;
+       }
+
+       #p2:target{
+           background-color: green;
+       }
+
+       p:target i{
+           color:hotpink;
+       }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li><a href="#p1">Jump to the first paragraph</a></li>
+        <li><a href="#p2">Jump to the second paragraph</a></li>
+        <li><a href="#nolinks">This link does not exist</a></li>
+    </ol>
+
+    <p id="p1">You can target <i>first paragraph</i></p>
+    <p id="p2">This is another paragraph</p>
+</body>
+
+</html>
